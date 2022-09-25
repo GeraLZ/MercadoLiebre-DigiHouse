@@ -51,11 +51,15 @@
 
     <main> 
         <form class="login" action="/">
+            
             <input class="input-login" type="text" placeholder="Nombre de usuario" required>
             <input class="input-login" type="text" placeholder="Apellidos" required>
             <input class="input-login" type="date" placeholder="Fecha de nacimiento" required>
             <input class="input-login" type="text" placeholder="Domicilio" required>
-            
+            <div class="foto_perfil">
+                <label for="foto_perfil" class="etiqueta_titulo">Selecciona una imagen para tu perfil: </label>
+                <input type="file" class="avatar-img" name="avatar" accept="image/*">
+            </div>
 
             <input class="input-login" type="password" placeholder="Contraseña" required>
             <input class="input-login" type="password" placeholder="Confirmar Contraseña" required>

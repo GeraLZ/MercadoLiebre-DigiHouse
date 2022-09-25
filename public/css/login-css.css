@@ -39,6 +39,16 @@ main form.login button{
     font-size: 10px;
 }
 
+.foto_perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.etiqueta_titulo{
+    text-align: center;
+}
+
 /*VIEWPORT TABLET*/
 @media (min-width: 361px) {
     main form.login button{
