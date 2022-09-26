@@ -1,18 +1,9 @@
-section.log-form{
-    display: flex;
-    width: 80%;
-    background-color: black;
-    border-radius: 25px;
-    margin: 10px;
-    padding: 10px;
-    
-}
-
-.login{
+.formulario{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     margin: 10px;
 }
 
@@ -26,7 +17,23 @@ section.log-form{
     margin: 10px;
 }
 
-main form.login button{
+.radioInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.checkboxInput{
+    display: flex;
+    margin: 5px;
+    font-size: 12px;
+    width: 15%;
+}
+
+.button-blue{
     background-color: #1259c3;
     color: white;
     font-weight: bold;
@@ -39,7 +46,7 @@ main form.login button{
     font-size: 10px;
 }
 
-.foto_perfil{
+.secFoto{
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -51,7 +58,7 @@ main form.login button{
 
 /*VIEWPORT TABLET*/
 @media (min-width: 361px) {
-    main form.login button{
+    main form.formulario button{
         font-size: 60%;
         width: 80px;
     }

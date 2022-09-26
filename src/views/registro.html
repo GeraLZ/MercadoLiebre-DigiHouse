@@ -17,7 +17,7 @@
             <img class="img-logo" src="images\logo-mercado-liebre.svg" alt="">
 
             <form class="buscador">
-                <input type="text" placeholder="Buscar productos y marcas" >
+                <input type="text" placeholder="Buscar productos y marcas">
                 <button><i class="fas fa-search"></i></button>
             </form>
 
@@ -49,23 +49,45 @@
 
     <section> <img class="img-banner" src="images\img-home-banner.jpg" alt=""> </section>
 
-    <main> 
-        <form class="login" action="/">
-            
-            <input class="input-login" type="text" placeholder="Nombre de usuario" required>
-            <input class="input-login" type="text" placeholder="Apellidos" required>
-            <input class="input-login" type="date" placeholder="Fecha de nacimiento" required>
-            <input class="input-login" type="text" placeholder="Domicilio" required>
-            <div class="foto_perfil">
-                <label for="foto_perfil" class="etiqueta_titulo">Selecciona una imagen para tu perfil: </label>
-                <input type="file" class="avatar-img" name="avatar" accept="image/*">
+    <main>
+        <form class="formulario" action="/">
+            <p>Datos generales</p>
+            <input class="input-login" type="text" name="nombreCompleto" placeholder="Nombre y Apellidos" required>
+            <input class="input-login" type="text" name="nombreUser" placeholder="Nombre de usuario" required>
+            <input class="input-login" type="text" name="cuentaCorreo" placeholder="Correo Electronico" required>
+
+            <label for="fechaNac">Fecha de nacimiento</label>
+            <input class="input-login" type="date" name="fechaNac" id="fechaNac" required>
+
+            <input class="input-login" type="text" name="domicilio" placeholder="Domicilio" required>
+
+            <div class="secFoto">
+                <label for="fotoPerfil" class="etiqueta_titulo">Selecciona una imagen para tu perfil: </label>
+                <input type="file" class="input-login" id="fotoPerfil" name="fotoPerfil" accept="image/*">
             </div>
 
-            <input class="input-login" type="password" placeholder="Contraseña" required>
-            <input class="input-login" type="password" placeholder="Confirmar Contraseña" required>
+            <p>Perfil de Usuario:</p>
+            <div class="radioInput">
+                <label class="radioInput" for="comprador"> <input type="radio" name="comprador" id="comprador"
+                        value="comprador"> Comprador</label>
+                <label class="radioInput" for="comerciante"> <input type="radio" name="comerciante" id="comerciante"
+                        value="comerciante"> Comerciante</label>
+            </div>
 
-            <button type="submit">REGISTER</button>
-            <button type="submit">CLEAR</button>
+            <p>Categorias de interes:</p>
+            <div class="radioInput">
+                <label class="radioInput"> <input type="checkbox" name="electro" value="electro"> Electro </label>
+                <label class="radioInput"> <input type="checkbox" name="moda" value="electro"> Moda </label>
+                <label class="radioInput"> <input type="checkbox" name="hogar" value="hogar"> Hogar </label>
+                <label class="radioInput"> <input type="checkbox" name="jugueteria" value="jugueteria"> Jugueteria </label>
+                <label class="radioInput"> <input type="checkbox" name="vida" value="vida"> Vida Sana </label>
+            </div>
+
+            <input class="input-login" type="password" name="contra" placeholder="Contraseña" required>
+            <input class="input-login" type="password" name="contraConf" placeholder="Confirmar Contraseña" required>
+
+            <button class="button-blue" type="submit">REGISTER</button>
+            <input class="button-blue" type="reset" value="CLEAR">
         </form>
     </main>
 
