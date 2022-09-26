@@ -140,6 +140,25 @@ footer {
     right: 20px;
 }
 
+article.producto:hover i{
+    transform: rotate(-90deg);
+    transition: .5s;
+}
+
+h4.descripcion{
+    visibility: hidden;
+}
+
+article.producto:hover h4.descripcion{
+    visibility: visible;
+    transition: 5s;
+}
+
+article.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: .5s;
+}
+
 .fa-search{
     color: #1259C3;
 }
@@ -169,6 +188,25 @@ footer {
 
 .img-producto {
     width: 100%;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*          FOOTER SECTION        */
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+footer{
+    background-color: white;
+    text-align: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+section.footer-container article{
+    margin:10px;
 }
 
 /*VIEWPORT TABLET*/
@@ -215,7 +253,6 @@ footer {
     }
 
     .producto {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 42%;
     }
 
@@ -224,6 +261,9 @@ footer {
         padding: 10px;
     }
 
+    .footer-container{
+        flex-direction: row;
+    }
 }
 
 /*VIEWPORT DESKTOP*/
