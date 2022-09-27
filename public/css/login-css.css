@@ -56,9 +56,15 @@
     text-align: center;
 }
 
+/*HOOVERS*/
+main .button-blue:hover{
+    background-color: #0022AA;
+    transition: 1s;
+}
+
 /*VIEWPORT TABLET*/
 @media (min-width: 361px) {
-    main form.formulario button{
+    main form .button-blue{
         font-size: 60%;
         width: 80px;
     }
@@ -66,5 +72,5 @@
 
 /*VIEWPORT DESKTOP*/
 @media (min-width: 769px) {
-
+    
 }

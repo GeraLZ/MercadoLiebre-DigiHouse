@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapiscenter.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -26,7 +26,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: space;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -34,6 +34,7 @@ nav {
 form.buscador{
     padding: 5px;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-grow: 5;
     width: 45%;
@@ -51,7 +52,7 @@ input{
 
 /*----------IMG-----------*/
 .img-logo{
-    width: 50%;
+    width: 100%;
     padding: 10px;
     flex-grow: 5;
 }
@@ -142,21 +143,11 @@ footer {
 
 article.producto:hover i{
     transform: rotate(-90deg);
-    transition: .5s;
+    transition: .6s;
 }
 
 h4.descripcion{
     visibility: hidden;
-}
-
-article.producto:hover h4.descripcion{
-    visibility: visible;
-    transition: 5s;
-}
-
-article.producto:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    transition: .5s;
 }
 
 .fa-search{
@@ -166,6 +157,7 @@ article.producto:hover{
 /*TEXT STYLES------------------------------*/
 .titular {
     font-size: 24px;
+    margin: 15px;
 }
 
 .precios {
@@ -184,12 +176,33 @@ article.producto:hover{
     display: none;
 }
 
+.copyright{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 12px;
+}
+
 /*IMG SIZES*/
 
 .img-producto {
     width: 100%;
 }
 
+/*HOOVERS*/
+article.producto:hover h4{
+    transition: 5s;
+    visibility: visible;
+}
+
+article.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: .5s;
+}
+
+footer section article:hover i{
+    color: #00aa1a;
+    transition: 1s;
+}
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*          FOOTER SECTION        */
